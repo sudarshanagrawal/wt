@@ -1,0 +1,122 @@
+.inputwrap label  {
+display:inline-block;
+text-align:right;
+width: 7em;
+padding-top : 10px;
+}
+.topnav {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #1c41b0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1c41b0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #4f74e3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.title h3{
+top:7%;
+position:absolute;
+display:inline;
+color:white;
+padding-left:10px;
+}
+.title h1{
+color:white;
+display:inline;
+padding-left:10px;
+position:absolute;
+font-size:2.5vw;
+}
+.title h5{
+display:inline;
+padding-left:10px;
+position:absolute;
+top:10%;
+color:white;
+}
+.body h3{
+margin-top:1%;
+}
+.title {
+background-image:url("download.jpg");
+height:8em;
+}
+div.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding-top:1%;
+float: right;
+    overflow: hidden;
+}
+
+
+div.topnav a {
+    display: block;
+    color: white;
+float: left;
+border-right: 1px solid #0033FF;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.topnav a:hover:not(.active) {
+background-color:#1c41b0;
+}
+
+div.topnav a.active {background-color: #4CAF50;}
+
+
+@media screen and (max-width: 600px){
+    div.topnav a.right, 
+    div.topnav a{float: none;}
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Student Registration</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+color: green;
+padding: 1em;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+.inputwrap h {
+    display: inline-block;
+    width: 6em;
+    text-align: right;
+}
+.myForm * {
+box-sizing: border-box;
+vertical-align: top;
+
+}
+
+input.txtbox {
+display: inline-block;
+width: 15em;
+text-align: left;
+}
+
+.myForm h {
+font-size: 1.1em;
+}
+
+.myForm input {
+border: 1px solid #ccc;
+border-radius: 15px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.5em;
+}
+
+
+.myForm input:hover[type="submit"]{
+background: #eee;
+cursor: pointer;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.myForm input[type="submit"] {
+padding: 0.7em;
+border-radius: 15em;
+background: #ddd;
+border: none;
+font-weight: bold;
+margin-left: 1.0em;
+}
+
+</style>
+
+</head>
+<body style="background-color:powderblue;">
+
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="ass.html">
+ <div class="inputwrap">
+<p>
+<h>Username:</h> 
+<input class="txtbox" type="text" name="usrname" placeholder="Enter your username" required>
+</p>
+</div>
+ <div class="inputwrap">
+<p>
+<h>Password:</h> 
+<input class="txtbox" type="password" name="password" placeholder="Enter your password" required>
+
+</p>
+</div>
+ <div class="inputwrap">
+<p>
+<h>Name:</h> 
+<input class="txtbox" type="text" name="student_name" placeholder="Enter your name" required>
+
+</p>
+</div>
+ <div class="inputwrap">
+<p>
+<h>Phone:</h> 
+<input class="txtbox" type="tel" name="phone_number" placeholder="Enter your phone number" required>
+
+</p>
+</div>
+ <div class="inputwrap">
+<p>
+<h>Email:</h> 
+<input class="txtbox" type="email" name="email_address" placeholder="Enter your email address" required>
+
+</p>
+</div>
+
+<fieldset>
+<legend>Which year?</legend>
+<p><label> <input type="radio" name="yr" required value="FE"> FE </label></p>
+<p><label> <input type="radio" name="yr" required value="SE"> SE </label></p>
+<p><label> <input type="radio" name="yr" required value="TE"> TE </label></p>
+<p><label> <input type="radio" name="yr" required value="BE"> BE </label></p>
+</fieldset>
+   
+<p>
+<fieldset>
+<legend>Gender</legend>
+<p><label> <input type="checkbox" class="radio" name="gender"> Male </label></p>
+<p><label> <input type="checkbox" class="radio" name="gender"> Female </label></p>
+<p><label> <input type="checkbox" class="radio" name="gender"> Rather not say </label></p>
+
+</fieldset>
+
+</label>
+</p>
+
+<p>
+<label>From: 
+<input type="text" name="from" required list="from">
+</label>
+
+<datalist id="from">
+<option value="Pune">
+<option value="Mumbai">
+<option value="Nashik">
+<option value="Amravati">
+<option value="Nagpur">
+<option value="Jalgoan">
+<option value="Delhi">
+<option value="Khamgoan">
+<option value="Thane">
+<option value="Akola">
+</datalist>
+</p>
+
+<input type="submit" value="Submit Details">
+
+</form>
